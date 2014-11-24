@@ -6,6 +6,7 @@ function get(link, callback){
   request(link, function(err, res, body){
     try {
       var song = parse(body)
+      song.link = link
     } catch(e) {
       err = e
     }
@@ -31,6 +32,7 @@ function parse(body){
   var songSummary = body.match(/\s+summary:"(.+)"/)[1]
 
   var song = {
+    link: '', // to be set
     source: audioSource,
     name: songName,
     user: userNickname,

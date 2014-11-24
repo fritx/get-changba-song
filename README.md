@@ -11,7 +11,7 @@ Get song data from link of changba
 ## Usage
 
 ```js
-var get = require('get-changba-song')
+var get = require('get-changba-song').get
 get('http://changba.com/s/5a3bo8I38I1HydevkfyvMw', function(err, song){
   console.log(song)
 })
