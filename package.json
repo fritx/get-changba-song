@@ -1,8 +1,11 @@
 {
   "name": "get-changba-song",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Get song data from link of changba",
   "main": "index.js",
+  "bin": {
+    "changba": "bin/cli.js"
+  },
   "repository": "git@github.com:fritx/get-changba-song.git",
   "dependencies": {
     "request": "^2.48.0"

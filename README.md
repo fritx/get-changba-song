@@ -19,6 +19,7 @@ get('http://changba.com/s/5a3bo8I38I1HydevkfyvMw', function(err, song){
 
 ```js
 {
+  link: 'http://changba.com/s/5a3bo8I38I1HydevkfyvMw',
   source: 'http://upuwmp3.changba.com/userdata/userwork/208/332383208.mp3',
   name: '因为爱情',
   user: 'Heightened',
