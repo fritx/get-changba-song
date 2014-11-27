@@ -21,7 +21,7 @@ function parse(body){
   )[1].trim()
 
   var userNickname = body.match(
-    /<div class="user_navition_title">(.+) 的作品<\/div>/
+    /<div class="user_navition_title">(.+)\s*的作品<\/div>/
   )[1].trim()
   var userPhoto = body.match(/pic:"(.+)"/)[1].trim()
   var songTitle = body.match(/title:"(.+)"/)[1].trim()
